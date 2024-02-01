@@ -24,7 +24,8 @@
     .about .container .txt-box {
         padding: 30px;
         width: 550px;
-        right: -80px;
+        right: -26px;
+        bottom: 80px;
     }
 } 
 @media (max-width: 767px) {
