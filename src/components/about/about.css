@@ -23,7 +23,7 @@
 @media (max-width: 1024px) {
     .about .container .txt-box {
         padding: 30px;
-        width: 550;
+        width: 550px;
         right: -80px;
     }
 } 
