@@ -20,7 +20,13 @@
     line-height: 1.7;
     color: #BEBEBE;
 }
-
+@media (max-width: 1024px) {
+    .about .container .txt-box {
+        padding: 30px;
+        width: 550;
+        right: -80px;
+    }
+} 
 @media (max-width: 767px) {
     .about .container {
         display: flex;
