@@ -43,8 +43,9 @@
         flex-direction: column;
         gap: 30px;
     }
-    .about .container .img-box img {
-        width: 100%;
+    .about .container .img-box {
+        width: auto;
+        height: auto;
     }
     .about .container .txt-box {
         position: static;
