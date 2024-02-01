@@ -1,0 +1,110 @@
+header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+}
+header .container {
+    justify-content: space-between;
+}
+header .container .logo img {
+    color: white;
+}
+/* header .container nav {
+    position: relative;
+} */
+header .container nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* Another Method */
+/* header .container nav ul li {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(255,255,255)) 50% calc(100% - 2px) / 0 2px no-repeat;
+    font: normal 500 20px / 1.35 "Work Sans", Helvetica, Arial, Verdana, sans-serif;
+    margin: -1px;
+    margin-bottom: -4px !important;
+    padding: 1px 5px 3px 3px;
+    text-decoration: none !important;
+    transition: all .35s ease-in-out;
+} */
+
+header .container nav ul li {
+    position: relative;
+}
+header .container nav ul li::after,
+header .container nav ul li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgba(240, 240, 240, 0.938);
+    transition: 0.3s ease-in-out;
+}
+header .container nav ul li:hover::after,
+header .container nav ul li.active::after {
+    width: 100%;
+}
+header .container nav .mobile i {
+    display: none;
+}
+header .container nav ul li a {
+    color: white;
+    font-size: clamp(8px, 8vw, 18px);
+}
+header .container nav ul li:hover, header .container nav ul li:focus {
+    background-size: 100% 2px;
+    transition: all .35s ease-in-out !important; 
+}
+@media (max-width: 991px) {
+    header .container .logo {
+        z-index: 333;
+    }
+    header .container .logo img {
+        width: 8em;
+    }
+    header .container nav .mobile i {
+        position: relative;
+        display: flex;
+        z-index: 333;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        color: #fff;
+    }
+    header .container nav ul {
+        /* display: none; */
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: -800px;
+        padding: 0 20px;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.5s ease-in-out;
+    }
+    header .container nav ul.active {
+        /* display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 20px;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column; */
+        right: 0;
+    }
+}

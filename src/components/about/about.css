@@ -1,0 +1,41 @@
+.about .container {
+    position: relative;
+    padding: 150px 0;
+}
+.about .container .txt-box {
+    background-color: #fff;
+    position: absolute;
+    padding: 30px 80px;
+    max-width: 640px;
+    bottom: 50px;
+    right: -150px;
+}
+.about .container .txt-box h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    /* font-size: 3.8em; */
+    font-size: clamp(2em, 8vw, 3.8em);
+}
+.about .container .txt-box p {
+    line-height: 1.7;
+    color: #BEBEBE;
+}
+
+@media (max-width: 767px) {
+    .about .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .container .img-box img {
+        width: 100%;
+    }
+    .about .container .txt-box {
+        position: static;
+        max-width: 100%;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
