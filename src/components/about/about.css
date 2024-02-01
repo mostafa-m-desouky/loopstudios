@@ -2,6 +2,12 @@
     position: relative;
     padding: 150px 0;
 }
+.about .container .img-box {
+    width: 800px;
+}
+.about .container .img-box img {
+    width: 100%;
+}
 .about .container .txt-box {
     background-color: #fff;
     position: absolute;
@@ -22,7 +28,7 @@
 }
 @media (max-width: 1024px) {
     .about .container .txt-box {
-        padding: 30px;
+        padding: 30px 10px;
         width: 550px;
         right: -26px;
         bottom: 80px;
