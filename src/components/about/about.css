@@ -27,11 +27,14 @@
     color: #BEBEBE;
 }
 @media (max-width: 1024px) {
+    .about .container .img-box {
+        width: 750px;
+    }
     .about .container .txt-box {
-        padding: 30px 10px;
+        padding: 30px 20px;
         width: 550px;
-        right: -26px;
-        bottom: 80px;
+        right: -0;
+        bottom: 98px;
     }
 } 
 @media (max-width: 767px) {
