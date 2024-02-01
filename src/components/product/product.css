@@ -52,13 +52,16 @@
     .product .container .creations-box span.first {
         display: none;
     }
-    .product .container .creations-box span.second {
+    .product .container span.second {
         display: block;
+        margin: 60px auto 0;
         padding: 6px 26px;
         border: 1px solid #000;
         cursor: pointer;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 200;
+        text-align: center;
+        width: fit-content;
     }
 }
 @media (max-width: 767px) {

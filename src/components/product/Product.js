@@ -51,7 +51,7 @@ const Product = () => {
                 <h3>make it <br /> fisheye</h3>
             </div>
         </div>
-        <span className='flex second'>see all</span>
+        <span className='second'>see all</span>
       </div>
     </section>
   )
