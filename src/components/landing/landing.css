@@ -14,6 +14,9 @@
     color: #Fff;
 }
 @media (max-width: 767px) {
+    .landing {
+        background-image: url(../../../public/assets/mobile/image-hero.jpg);
+    }
     .landing .container h1 {
         width: 420px;
         font-size: 4em;
